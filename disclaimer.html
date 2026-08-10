@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Dash Disclaimer | Tesla Dash 免责声明</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; 
+               max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #FFB74D; padding-bottom: 10px; }
+        h2 { color: #333; margin-top: 30px; }
+        .date { color: #888; font-size: 14px; }
+        .highlight { background: #FFF9F0; padding: 15px; border-left: 4px solid #FFB74D; }
+        .lang-switch { text-align: center; margin-bottom: 30px; }
+        .lang-switch button { padding: 8px 16px; margin: 0 5px; border: 1px solid #FFB74D; 
+                            background: white; color: #FF8C00; cursor: pointer; border-radius: 4px; }
+        .lang-switch button.active { background: #FF8C00; color: white; }
+        .en { display: none; }
+        .zh { display: block; }
+        hr.divider { border: none; border-top: 2px dashed #FFB74D; margin: 50px 0; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            if (lang === 'zh') {
+                document.querySelectorAll('.zh').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+                document.getElementById('btn-zh').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.querySelectorAll('.zh').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'block');
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-zh').classList.remove('active');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-zh" class="active" onclick="switchLang('zh')">中文</button>
+        <button id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 中文版本 -->
+    <div class="zh">
+        <h1>⚠️ Tesla Dash 免责声明</h1>
+        <p class="date">最后更新：2026 年 8 月 10 日</p>
+
+        <h2>1. 非官方声明</h2>
+        <p>Tesla Dash 是一款由独立开发者制作的第三方 iOS 应用，与 Tesla, Inc. 无任何关联，未获其授权、认可或赞助。Tesla® 为 Tesla, Inc. 的注册商标。</p>
+
+        <h2>2. 驾驶安全责任</h2>
+        <p>Tesla Dash 仅作为驾驶辅助显示工具。应用显示的数据可能因蓝牙连接、GPS 信号、网络环境、系统限制或车辆响应而产生短暂延迟或误差。驾驶过程中，请始终以车辆官方仪表及道路实际情况为准，切勿边驾驶边操作本应用。</p>
+
+        <h2>3. 数据仅供参考</h2>
+        <p>本应用读取并显示的车辆数据（车速、电量、续航等）仅供参考，不构成任何驾驶建议或导航指引。开发者不保证数据的实时性、准确性或完整性。</p>
+
+        <h2>4. 责任范围</h2>
+        <p>在法律允许的最大范围内，开发者不对因使用或无法使用本应用所造成的任何直接、间接、偶然或后果性损失承担责任，包括但不限于车辆损坏、交通事故或人身伤害。使用本应用即表示您理解并同意上述条款。</p>
+
+        <hr style="margin-top:40px;">
+        <p style="color:#888;font-size:13px;">© 2026 Tesla Dash Studio. 保留所有权利。</p>
+    </div>
+
+    <!-- 英文版本 -->
+    <div class="en">
+        <h1>⚠️ Tesla Dash Disclaimer</h1>
+        <p class="date">Last Updated: August 10, 2026</p>
+
+        <h2>1. Not an Official Product</h2>
+        <p>Tesla Dash is a third-party iOS application developed by an independent developer. It is not affiliated with, endorsed by, or sponsored by Tesla, Inc. Tesla® is a registered trademark of Tesla, Inc.</p>
+
+        <h2>2. Driving Safety</h2>
+        <p>Tesla Dash is provided as an informational driving companion. Displayed data may be temporarily delayed or affected by Bluetooth connectivity, GPS availability, network conditions, system limitations, or vehicle response. While driving, always rely on your vehicle's official instruments and actual road conditions, and never operate the app while driving.</p>
+
+        <h2>3. Data for Reference Only</h2>
+        <p>Vehicle data displayed by the app (speed, battery, range, etc.) is for reference only and does not constitute driving or navigation advice. The developer does not guarantee the timeliness, accuracy, or completeness of such data.</p>
+
+        <h2>4. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, the developer shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use this app, including but not limited to vehicle damage, traffic accidents, or personal injury. By using this app, you acknowledge and agree to these terms.</p>
+
+        <hr style="margin-top:40px;">
+        <p style="color:#888;font-size:13px;">© 2026 Tesla Dash Studio. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
