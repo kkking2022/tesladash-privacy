@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Dash 支持中心 | Tesla Dash Support</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+               max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #FFB74D; padding-bottom: 10px; }
+        h2 { color: #333; margin-top: 30px; }
+        .date { color: #888; font-size: 14px; }
+        .highlight { background: #FFF9F0; padding: 15px; border-left: 4px solid #FFB74D; }
+        .lang-switch { text-align: center; margin-bottom: 30px; }
+        .lang-switch button { padding: 8px 16px; margin: 0 5px; border: 1px solid #FFB74D;
+                            background: white; color: #FF8C00; cursor: pointer; border-radius: 4px; }
+        .lang-switch button.active { background: #FF8C00; color: white; }
+        .en { display: none; }
+        .zh { display: block; }
+        hr.divider { border: none; border-top: 2px dashed #FFB74D; margin: 50px 0; }
+        .faq { margin-bottom: 24px; }
+        .faq strong { color: #1a1a1a; }
+        a { color: #FF8C00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            if (lang === 'zh') {
+                document.querySelectorAll('.zh').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+                document.getElementById('btn-zh').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.querySelectorAll('.zh').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'block');
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-zh').classList.remove('active');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-zh" class="active" onclick="switchLang('zh')">中文</button>
+        <button id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 中文版本 -->
+    <div class="zh">
+        <h1>🛠️ Tesla Dash 支持中心</h1>
+        <p>Tesla Dash 是一款通过蓝牙（BLE）连接 Tesla 车辆、实时显示车速、电量、续航、档位与空调等信息的 iOS 仪表盘应用。</p>
+        <div class="highlight">
+            <p><strong>免责声明：</strong>Tesla Dash 为独立第三方应用，与 Tesla, Inc. 无任何关联或官方认可。车辆信息仅供参考，请始终以车辆实际状态及道路情况为准。</p>
+        </div>
+        <p class="date">支持邮箱：<a href="mailto:29117168@qq.com">29117168@qq.com</a></p>
+
+        <h2>联系我们</h2>
+        <div class="highlight">
+            <p>如需帮助，请发送邮件至 <a href="mailto:29117168@qq.com">29117168@qq.com</a>，并尽量附上：设备型号、iOS 版本、遇到的问题描述与截图。我们会在 1–3 个工作日内回复。</p>
+        </div>
+
+        <h2>常见问题（FAQ）</h2>
+
+        <div class="faq">
+            <p><strong>有免费试用吗？</strong></p>
+            <p>有。首次安装即可完整体验全部功能 7 天，无需注册、无需账号。试用结束后，可购买解锁完整驾驶体验（支持一次性解锁或月度订阅）。</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>如何连接我的 Tesla 车辆？</strong></p>
+            <p>请先确认车辆与 iPhone 距离足够近，然后在 Tesla 车机与手机端开启蓝牙。首次连接时，请在 Tesla 车辆上授权蓝牙配对，并在 iPhone 上允许 Tesla Dash 使用蓝牙权限。</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>蓝牙连接不上 / 数据不显示？</strong></p>
+            <p>① 确认 iPhone「设置 → 蓝牙」已开启；② 确认 Tesla 车辆已唤醒；③ 在 iPhone「设置 → Tesla Dash」中允许蓝牙权限；④ 尝试关闭再重新打开应用，或在车辆端重新配对。</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>点击解锁提示 “Unable to load product”？</strong></p>
+            <p>请确认 iPhone 已登录 App Store 账号且网络连接正常。若仍无法加载，请尝试点击「恢复购买」，或稍后重试。问题持续存在时，请通过上方邮箱联系我们。</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>如何恢复已购买的内容？</strong></p>
+            <p>请在应用内设置页点击「恢复购买」，并使用购买时的 Apple ID 登录。恢复不会重复扣费。</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>车速显示偶尔延迟或不稳定？</strong></p>
+            <p>这是蓝牙数据短暂延迟时的正常表现。应用会使用 iPhone 定位辅助稳定速度显示，请在 iPhone「设置 → 隐私 → 定位服务」中允许 Tesla Dash 使用定位。</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>我的数据会被上传吗？</strong></p>
+            <p>不会。所有车辆数据仅在设备本地处理与显示，不上传至任何外部服务器。详见隐私政策。</p>
+        </div>
+
+        <h2>法律文件</h2>
+        <ul>
+            <li><a href="privacy-policy.html">隐私政策</a></li>
+            <li><a href="terms-of-service.html">服务条款</a></li>
+            <li><a href="disclaimer.html">免责声明</a></li>
+        </ul>
+
+        <hr style="margin-top:40px;">
+        <p style="color:#888;font-size:13px;">© 2026 Tesla Dash Studio. 保留所有权利。</p>
+    </div>
+
+    <!-- 英文版本 -->
+    <div class="en">
+        <h1>🛠️ Tesla Dash Support Center</h1>
+        <p>Tesla Dash is an iOS dashboard app that connects to your Tesla vehicle via Bluetooth (BLE) and displays real-time information such as speed, battery level, range, gear status, and climate.</p>
+        <div class="highlight">
+            <p><strong>Disclaimer:</strong> Tesla Dash is an independent third-party application and is not affiliated with, endorsed by, or officially approved by Tesla, Inc. Vehicle information is for reference only; always follow the actual state of your vehicle and road conditions.</p>
+        </div>
+        <p class="date">Support email: <a href="mailto:29117168@qq.com">29117168@qq.com</a></p>
+
+        <h2>Contact Us</h2>
+        <div class="highlight">
+            <p>For assistance, please email <a href="mailto:29117168@qq.com">29117168@qq.com</a> and include your device model, iOS version, a description of the issue, and screenshots if possible. We usually reply within 1–3 business days.</p>
+        </div>
+
+        <h2>FAQ</h2>
+
+        <div class="faq">
+            <p><strong>Is there a free trial?</strong></p>
+            <p>Yes. New users can experience all features free for 7 days — no registration and no account required. After the trial, unlock the full driving experience with a one-time purchase or a monthly subscription.</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>How do I connect to my Tesla?</strong></p>
+            <p>Keep your iPhone near the vehicle and enable Bluetooth on both the vehicle and your iPhone. On first connection, authorize Bluetooth pairing on the Tesla and allow Bluetooth permission for Tesla Dash on your iPhone.</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>Bluetooth won't connect / no data shown?</strong></p>
+            <p>① Confirm Bluetooth is on in iPhone Settings; ② Confirm the vehicle is awake; ③ Allow Bluetooth for Tesla Dash in iPhone Settings; ④ Quit and reopen the app, or re-pair from the vehicle.</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>“Unable to load product” when tapping unlock?</strong></p>
+            <p>Confirm your iPhone is signed in to the App Store and has a working network connection. If it still fails, try “Restore Purchases” or retry later. If the issue persists, contact us at the email above.</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>How do I restore my purchases?</strong></p>
+            <p>Tap “Restore Purchases” in the in-app settings and sign in with the Apple ID used for the purchase. Restoring never charges you again.</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>Speed display occasionally lags or is unstable?</strong></p>
+            <p>This is normal during brief Bluetooth latency. The app uses iPhone location services to help stabilize the speed display. Allow location access for Tesla Dash in iPhone Settings → Privacy → Location Services.</p>
+        </div>
+
+        <div class="faq">
+            <p><strong>Is my data uploaded anywhere?</strong></p>
+            <p>No. All vehicle data is processed and displayed locally on your device and is not uploaded to any external server. See the Privacy Policy for details.</p>
+        </div>
+
+        <h2>Legal</h2>
+        <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+
+        <hr style="margin-top:40px;">
+        <p style="color:#888;font-size:13px;">© 2026 Tesla Dash Studio. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
